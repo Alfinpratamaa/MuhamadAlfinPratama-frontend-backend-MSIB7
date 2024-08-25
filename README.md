@@ -1,5 +1,5 @@
 ## MUHAMAD ALFIN PRATAMA
 
-bash```
-node index
+```bash
+   node index
 
