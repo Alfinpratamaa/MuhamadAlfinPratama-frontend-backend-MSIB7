@@ -1,9 +1,15 @@
-const calculateSum = (m) =>
-  m.reduce(
-    (sum, row, i) =>
-      sum + row[i] + (i !== m.length - i - 1 ? row[m.length - i - 1] : 0),
-    0
-  );
+const calculateSum = (m) => {
+  let n = m.length;
+  let sum = 0;
+
+  for (let i = 0; i < n; i++) {
+    sum += m[i][i];
+    if (i !== n - i - 1) {
+      sum += m[i][n - i - 1];
+    }
+  }
+  return sum;
+};
 
 //contoh no 1
 const matrix1 = [
